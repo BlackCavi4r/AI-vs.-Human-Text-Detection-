@@ -1,0 +1,14 @@
+{
+  "rows": 2500,
+  "columns": [
+    "text",
+    "label"
+  ],
+  "label_counts": {
+    "0": 1250,
+    "1": 1250
+  },
+  "average_words": 326.706,
+  "median_words": 334.5,
+  "note": "Saved run uses a balanced sample so training stays practical on a laptop."
+}

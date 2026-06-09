@@ -1,0 +1,7 @@
+model,accuracy,precision,recall,f1,roc_auc,best_params,training_seconds,confusion_matrix_plot,roc_plot
+SVM,0.938,0.9362549800796812,0.94,0.93812375249501,0.988816,{'C': 1.0},0.1,reports/figures/confusion_svm.png,reports/figures/roc_svm.png
+AdaBoost,0.914,0.8876404494382022,0.948,0.9168278529980658,0.9756880000000001,"{'learning_rate': 0.8, 'n_estimators': 25}",2.38,reports/figures/confusion_adaboost.png,reports/figures/roc_adaboost.png
+FNN,0.876,0.8700787401574803,0.884,0.876984126984127,0.9521120000000001,"{'embedding_dim': 64, 'hidden_dim': 128, 'dropout': 0.3, 'lr': 0.001}",3.3,reports/figures/confusion_fnn.png,reports/figures/roc_fnn.png
+CNN,0.866,0.8645418326693227,0.868,0.8662674650698603,0.94232,"{'embedding_dim': 64, 'num_filters': 64, 'filter_sizes': (3, 4, 5), 'dropout': 0.3, 'lr': 0.001}",14.66,reports/figures/confusion_cnn.png,reports/figures/roc_cnn.png
+Decision Tree,0.844,0.8115942028985508,0.896,0.8517110266159695,0.8358399999999999,"{'max_depth': 12, 'min_samples_split': 2}",0.45,reports/figures/confusion_decision_tree.png,reports/figures/roc_decision_tree.png
+LSTM,0.756,0.75,0.768,0.758893280632411,0.7924959999999999,"{'embedding_dim': 64, 'hidden_dim': 64, 'dropout': 0.3, 'lr': 0.001}",9.5,reports/figures/confusion_lstm.png,reports/figures/roc_lstm.png

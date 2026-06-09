@@ -1,0 +1,4 @@
+model,trial,split,selected,max_len,embedding_dim,hidden_dim,dropout,lr,test_accuracy,test_precision,test_recall,test_f1,test_roc_auc,num_filters,filter_sizes,tuning_method
+FNN,fnn_a,test_selected_saved_run,True,120,64,128.0,0.3,0.001,0.876,0.8700787401574803,0.884,0.876984126984127,0.952112,,,small manual deep-learning grid; selected config used for saved app model
+LSTM,lstm_a,test_selected_saved_run,True,60,64,64.0,0.3,0.001,0.756,0.75,0.768,0.758893280632411,0.7924959999999999,,,small manual deep-learning grid; selected config used for saved app model
+CNN,cnn_a,test_selected_saved_run,True,120,64,,0.3,0.001,0.866,0.8645418326693227,0.868,0.8662674650698603,0.94232,64.0,"(3, 4, 5)",small manual deep-learning grid; selected config used for saved app model

@@ -1,0 +1,12 @@
+model,model_type,tuning_method,parameter,values,selection_metric
+SVM,Traditional ML,GridSearchCV,C,"[0.5, 1.0, 2.0]",F1 score
+Decision Tree,Traditional ML,GridSearchCV,max_depth,"[10, 20, None]",F1 score
+Decision Tree,Traditional ML,GridSearchCV,min_samples_split,"[2, 10]",F1 score
+AdaBoost,Traditional ML,GridSearchCV,n_estimators,"[50, 100]",F1 score
+AdaBoost,Traditional ML,GridSearchCV,learning_rate,"[0.5, 1.0]",F1 score
+FNN,Deep Learning,small manual grid / validation F1,trial fnn_a,"max_len=120, epochs=15, embedding_dim=64, hidden_dim=128, dropout=0.3, lr=0.001",Validation F1
+FNN,Deep Learning,small manual grid / validation F1,trial fnn_b,"max_len=150, epochs=12, embedding_dim=96, hidden_dim=160, dropout=0.4, lr=0.0008",Validation F1
+LSTM,Deep Learning,small manual grid / validation F1,trial lstm_a,"max_len=60, epochs=20, embedding_dim=64, hidden_dim=64, dropout=0.3, lr=0.001",Validation F1
+LSTM,Deep Learning,small manual grid / validation F1,trial lstm_b,"max_len=90, epochs=16, embedding_dim=64, hidden_dim=96, dropout=0.4, lr=0.0008",Validation F1
+CNN,Deep Learning,small manual grid / validation F1,trial cnn_a,"max_len=120, epochs=15, embedding_dim=64, num_filters=64, filter_sizes=(3,4,5), dropout=0.3, lr=0.001",Validation F1
+CNN,Deep Learning,small manual grid / validation F1,trial cnn_b,"max_len=150, epochs=12, embedding_dim=96, num_filters=96, filter_sizes=(2,3,4,5), dropout=0.4, lr=0.0008",Validation F1

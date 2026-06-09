@@ -1,0 +1,106 @@
+{
+  "SVM": {
+    "accuracy": 0.938,
+    "precision": 0.9362549800796812,
+    "recall": 0.94,
+    "f1": 0.93812375249501,
+    "roc_auc": 0.988816,
+    "best_params": {
+      "C": 1.0
+    },
+    "training_seconds": 0.1,
+    "confusion_matrix_plot": "reports/figures/confusion_svm.png",
+    "roc_plot": "reports/figures/roc_svm.png"
+  },
+  "Decision Tree": {
+    "accuracy": 0.844,
+    "precision": 0.8115942028985508,
+    "recall": 0.896,
+    "f1": 0.8517110266159695,
+    "roc_auc": 0.8358399999999999,
+    "best_params": {
+      "max_depth": 12,
+      "min_samples_split": 2
+    },
+    "training_seconds": 0.45,
+    "confusion_matrix_plot": "reports/figures/confusion_decision_tree.png",
+    "roc_plot": "reports/figures/roc_decision_tree.png"
+  },
+  "AdaBoost": {
+    "accuracy": 0.914,
+    "precision": 0.8876404494382022,
+    "recall": 0.948,
+    "f1": 0.9168278529980658,
+    "roc_auc": 0.9756880000000001,
+    "best_params": {
+      "learning_rate": 0.8,
+      "n_estimators": 25
+    },
+    "training_seconds": 2.38,
+    "confusion_matrix_plot": "reports/figures/confusion_adaboost.png",
+    "roc_plot": "reports/figures/roc_adaboost.png"
+  },
+  "FNN": {
+    "accuracy": 0.876,
+    "precision": 0.8700787401574803,
+    "recall": 0.884,
+    "f1": 0.876984126984127,
+    "roc_auc": 0.9521120000000001,
+    "best_params": {
+      "embedding_dim": 64,
+      "hidden_dim": 128,
+      "dropout": 0.3,
+      "lr": 0.001
+    },
+    "training_seconds": 3.3,
+    "confusion_matrix_plot": "reports/figures/confusion_fnn.png",
+    "roc_plot": "reports/figures/roc_fnn.png"
+  },
+  "LSTM": {
+    "accuracy": 0.756,
+    "precision": 0.75,
+    "recall": 0.768,
+    "f1": 0.758893280632411,
+    "roc_auc": 0.7924959999999999,
+    "best_params": {
+      "embedding_dim": 64,
+      "hidden_dim": 64,
+      "dropout": 0.3,
+      "lr": 0.001
+    },
+    "training_seconds": 9.5,
+    "confusion_matrix_plot": "reports/figures/confusion_lstm.png",
+    "roc_plot": "reports/figures/roc_lstm.png"
+  },
+  "CNN": {
+    "accuracy": 0.866,
+    "precision": 0.8645418326693227,
+    "recall": 0.868,
+    "f1": 0.8662674650698603,
+    "roc_auc": 0.94232,
+    "best_params": {
+      "embedding_dim": 64,
+      "num_filters": 64,
+      "filter_sizes": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.3,
+      "lr": 0.001
+    },
+    "training_seconds": 14.66,
+    "confusion_matrix_plot": "reports/figures/confusion_cnn.png",
+    "roc_plot": "reports/figures/roc_cnn.png"
+  },
+  "_overall": {
+    "roc_comparison_plot": "reports/figures/roc_model_comparison.png",
+    "label_definition": {
+      "0": "Human-written text",
+      "1": "AI-written text"
+    },
+    "test_size": 500,
+    "rows_used_for_saved_run": 2500,
+    "note": "Models were trained on a balanced 2,500-row sample for a normal laptop runtime."
+  }
+}
