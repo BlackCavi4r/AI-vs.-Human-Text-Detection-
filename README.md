@@ -19,14 +19,32 @@ ai_human_detection_project/
 ├── requirements.txt
 ├── README.md
 ├── models/
+│   ├── svm_model.pkl
+│   ├── decision_tree_model.pkl
+│   ├── adaboost_model.pkl
+│   ├── fnn_model.pt
+│   ├── lstm_model.pt
+│   ├── cnn_model.pt
+│   ├── tfidf_vectorizer.pkl
+│   ├── deep_vocab.pkl
+│   ├── linguistic_scaler.pkl
+│   ├── feature_names.pkl
+│   └── embedding_model/
+│       └── word2vec.model
 ├── data/
 │   ├── training_data/
+│   │   └── train_data_with_labels.xlsx
 │   └── test_data/
 ├── notebooks/
 │   └── project1_notebook.ipynb
 ├── reports/
+│   ├── model_comparison.csv
+│   ├── feature_comparison.csv
+│   ├── deep_tuning_results.csv
 │   └── figures/
 └── sample_docs/
+    ├── human_sample.txt
+    └── ai_sample.txt
 ```
 
 ## How to run the app
